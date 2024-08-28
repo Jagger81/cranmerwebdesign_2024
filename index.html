@@ -44,7 +44,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Ninestars</h1>
+        <h1 class="sitename">CWB</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -89,15 +89,15 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <h1>Bettter digital experience with Ninestars</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
+            <h1>Cranmer Web Design</h1>
+            <p>Clean, Responsive Wesbites</p>
             <div class="d-flex">
               <a href="index.html#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              <!--<a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+            <img src="assets/img/webdesign.png" class="img-fluid animated" alt="">
           </div>
         </div>
       </div>
@@ -111,8 +111,8 @@
 
         <div class="row gy-3">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about-img.svg" alt="" class="img-fluid">
+          <div class="col-lg-6" id="RD_large_screen" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/responsive-designs.png" alt="responsive design image" class="img-fluid">
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -146,9 +146,18 @@
             </div>
 
           </div>
+
+          <div class="col-lg-6" id="RD_small_screen" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/responsive-designs.png" alt="responsive design image" class="img-fluid">
+          </div>
+
         </div>
 
       </div>
+
+
+
+
 
     </section><!-- /About Section -->
 
@@ -203,37 +212,101 @@
 
     </section><!-- /Services Section -->
 
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Logo Design</h2>
+        <p>Below are sample logos that we've designed for clients</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/logos/Anna Livia Logo_blue.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/CL_logo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/HZ_logo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/Holly's Horse Carriages.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/hidden_naggin7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/house_of_travel.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/SFT_logo_5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/SE_CPC_logo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/Cranmer Consultancy.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/logos/inc_travel.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>The below illustrate some of our recent work - click on the link in the images to view the full website</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <!--<div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">-->
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <!--<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-product">Product</li>
             <li data-filter=".filter-branding">Branding</li>
             <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>--><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/DLR.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Driving Lessons Raheny</h4>
+                  <!--<p>Lorem ipsum, dolor sit amet consectetur</p>-->
+                  <a href="assets/img/portfolio/DLR.png" title="Driving Lessons Raheny" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://drivinglessonsraheny.ie/" target="_blank" title="Visit Site" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -243,7 +316,7 @@
                 <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <!--<p>Lorem ipsum, dolor sit amet consectetur</p>-->
                   <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -372,7 +445,7 @@
 
           </div><!-- End Portfolio Container -->
 
-        </div>
+        <!--</div>-->
 
       </div>
 
@@ -462,25 +535,25 @@
     </section><!-- /Faq Section -->
 
     <!-- Team Section -->
-    <section id="team" class="team section">
+    <!--<section id="team" class="team section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <Section Title -->
+      <!--<div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>--?!-- End Section Title -->
 
-      <div class="container">
+      <!--<div class="container">
 
         <div class="row gy-4">
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/Profile Pic.png" id="profile_pic" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
+                  <h4>Eddie Cranmer</h4>
+                  <span>Chief Designer</span>
                 </div>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -490,129 +563,17 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>--> <!-- End Team Member -->
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+         
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
+        <!--</div>
 
       </div>
 
-    </section><!-- /Team Section -->
+    </section>--> <!-- /Team Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Clients</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
+    
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">

@@ -832,7 +832,7 @@ section,
 }
 
 .hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: up-down 3s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 640px) {
@@ -912,6 +912,27 @@ section,
 
 .about .about-content p:last-child {
   margin-bottom: 0;
+}
+
+#RD_large_screen {
+  padding-top: 80px;
+  padding-right: 50px;
+}
+
+#RD_small_screen {
+  padding-top: 50px;
+}
+
+@media (max-width: 980px) {
+  #RD_large_screen {
+    display: none;
+  }
+}
+
+@media (min-width: 980px) {
+  #RD_small_screen {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1155,6 +1176,10 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+#profile_pic {
+  border-radius: 50px;
+}
+
 .team {
   --default-color: #ffffff;
 }
