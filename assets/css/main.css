@@ -1105,6 +1105,10 @@ padding-bottom: 25px;
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
+#faq_padding{
+margin-bottom: 15px;
+}
+
 .faq .faq-container .faq-item {
   background-color: var(--surface-color);
   position: relative;
