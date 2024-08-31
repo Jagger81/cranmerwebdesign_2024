@@ -222,10 +222,26 @@ h6 {
     order: 3;
   }
 
-  #portfolio_button_1{
+  #portfolio_button_1,#sitename_text{
     display: none;
   }
 
+  #contact_button{
+    margin-right: 30%;
+  }
+
+}
+
+@media (max-width: 960px) {
+  #contact_button{
+    margin-right: 28%;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact_button{
+    margin-right: 10%;
+  }
 }
 
 /*--------------------------------------------------------------
