@@ -241,6 +241,10 @@ h6 {
     display: none;
   }
 
+  #portfolio_button_1{
+    margin-left: 12.5%;
+  }
+
   .navmenu ul {
     margin: 0;
     padding: 0;
